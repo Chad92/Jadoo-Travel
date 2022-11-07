@@ -1,0 +1,585 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;  
+}
+
+/* HEADER*/
+body {
+    background-image: url(images/grossetache-jaune.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: flex-end;
+}
+ul {
+    display: flex;
+    gap: 2em;
+}
+
+li{
+    list-style: none;
+    font-family: sans-serif, "Montserrat";
+    font-weight: 900;
+}
+
+.vecteurlangue {
+    width: 10px;
+    height: 90%;
+    opacity: 50%;
+}
+
+.langue {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.inscription {
+    border: black 1px solid;
+    border-radius: 10px;
+    padding-inline: 5px ;
+}
+
+li :hover {
+    color: orange;
+    border-radius: 10px;
+}
+
+@media screen and (max-width : 800px) {
+    header  {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 12px;
+        padding-top: 20px;
+    }
+
+}
+/* HEADER*/
+
+/* CONTENEUR1 */
+
+.conteneur1 {
+    display: flex;
+    margin: 150px;
+}
+
+h2 {
+    color: orange;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2PX;
+    font-size: 36px;
+}
+h1{
+    font-family: "Volkhov", serif;
+    font-size: 72px;
+    font-weight: bold;
+    color: #181E4B;
+}
+
+p{
+    font-size: 16px;
+    line-height: 30px;
+    font-family: sans-serif, "SF Pro";
+    color: #5E6282;
+}
+.doublebouton {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    gap: 100px;
+    align-items: center;
+}
+.demo {
+    display: flex;
+    gap : 10px;
+    align-items: center;
+}
+.meuf {
+width: 55%;
+height: 55%;
+}
+.bouton {
+    color: white;
+    background-color: orange;
+    border-radius: 2ch;
+    padding-inline: 10px;
+    height: 60%;
+    border: solid;
+    box-shadow: orange 0px 10px 30px;
+    border-color: transparent;
+}
+
+
+.boutondemo {
+    width: 30%;
+}
+
+.boutonstyle{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif, "Montserrat";
+}
+
+.tiret-rouge {
+    position: absolute;
+    top: 340px;
+    right: 750px;
+    width: 20%;
+    z-index: -1;
+}
+
+/* FIN CONTENEUR 1 */
+
+/* DEBUT SERVICES */
+.conteneur2 {
+    padding: 40px;
+}
+.services {
+    display: flex;    
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+}
+.servicesprez {
+display: grid;
+justify-content: center;
+align-items: center;
+}
+h3{
+    text-align: center;
+    font-size: 32px;
+    font-family: sans-serif, "Bebas Neue";
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: #5E6282;
+}
+
+h4{
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif, "Montserrat";
+    font-weight: bold;
+}
+.calculated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.flights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(247, 244, 244);
+    border-radius: 2ch;
+    padding: 20px;
+    gap: 20px;
+
+}
+.rectanglerouge{ 
+    z-index: -1;
+    position: absolute;
+    top : 1430px;
+    left: 450px;
+
+}
+.local {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+}
+.customisation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+}
+.aviondemerde {
+    height: 10vh;
+}
+
+/* FIN SERVICES */
+/* debut DESTINATIONS */
+.destinationprez {
+    display: grid ;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+
+}
+.destination {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+
+}
+.rome {
+    background-color: rgb(246, 246, 246);
+    border-radius: 4ch;
+}
+.prixrome {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.romenavigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+}
+.rome img {
+    border-radius: 0;
+    border: chocolate 4px;
+}
+
+.london {
+    background-color: rgb(246, 246, 246);
+    border-radius: 4ch;
+}
+.prixlondre {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.londonnavi {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+}
+.europe {
+    background-color: rgb(246, 246, 246);
+    border-radius: 4ch;
+}
+.europe img {
+    border-radius: 0ch ;
+}
+
+.prixeurope {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.europenavi {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+
+}
+.europe img {
+    border-radius: 0;
+    border: chocolate 4px;
+}
+/* FIN DESTINATIONS */
+
+/*  DEBUT CONTENEUR TRIP */
+
+.conteneur4 {
+margin-top: -100px;
+}
+.trip {
+    margin-left: 100px;
+    padding:40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.trip h3 {
+    font-size: 18px;
+    text-align: left;
+}
+
+.trip h1 {
+font-size: 50px;
+text-align: left;
+}
+
+.textetrip {
+    display: grid;
+    padding: 20px;
+    gap: 30px;
+}
+.textejaune {
+display: flex;
+align-items: center;
+}
+.textejaunebis{
+    display: grid;
+padding-left: 20px;}
+
+.textejaunebis h4{
+    text-align: left;
+}
+
+.texterouge {
+    display: flex;
+    align-items: center;
+}
+
+.texterougebis {
+    display: grid;
+    padding-left: 20px;
+}
+
+.texterougebis h4 {
+    text-align: left;
+}
+
+.textebleu {
+    display: flex;
+    align-items: center;
+}
+
+.textebleubis {
+    display: grid;
+    padding-left: 20px;
+}
+
+.textebleubis h4 {
+    text-align: left;
+}
+
+/*  FIN CONTENEUR TRIP */
+/* DEBUT CONTENEUR AVIS */
+.avis {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 40px;
+}
+.texte-avis-gauche {
+    display: grid;
+    gap: 20px;
+    align-items: center;
+
+}
+.avis h3 {
+    font-size: 18px;
+    text-align: left;
+}
+
+.avis h1 {
+    font-size: 50px;
+    text-align: left;
+}
+
+.texte-avis-gauche img {
+    width: 50px;
+    margin-top: 80px;
+}
+.image-avis-droite {
+    display: grid;
+    gap: 10px;
+    background-color: #e4e4e4;
+    padding: 20px;
+    border-radius: 3ch;
+    background: url(images/profil-avis.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    top: 90px;
+    left: 5Opx;
+}
+
+.image-avis-droite h4 {
+    text-align: left;
+}
+.image-avis-droite > p {
+    display: grid;
+    text-align: left;
+    gap: 0px;
+}
+.texte-droite-avis {
+    margin: 50px;
+}
+.image-superpose-droite-avis {
+    display: grid;
+    gap: 10px;
+    background-color: #e4e4e4;
+    border-radius: 3ch;
+    padding: 10px;
+    position: relative;
+    bottom: 50px;
+}
+.image-superpose-droite-avis h4 {
+    text-align: left;
+}
+.big-avis-droite {
+    display: grid;
+    position: relative;
+}
+/* FIN CONTENEUR AVIS */
+/* debut CONTENEUR logo */
+.conteneur6 {
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+/* FIN CONTENEUR logo */
+/* DEBUT CONTENEUR SUBSCRIBE */
+.conteneur7 {
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.subscribe {
+    background-color: #e6e0f9 ;
+    align-items: center;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 10ch 2ch 2ch 2ch;
+}
+.subscribe h3 {
+    font-weight: 550;
+}
+
+.bouton-subscribe {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bouton-subscribe p {
+    background-color: white;
+    text-align: left;
+    padding-right: 280px;
+    padding-left: 20px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 1ch;
+}
+
+.bouton-subscribe button {
+    background: linear-gradient(#FF956D , #FF7D68);
+    border: none;
+    color: white;
+    font-family: sans-serif, "Montserrat";
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 1ch;
+}
+
+/* FIN CONTENEUR subscribe */
+/* debut CONTENEUR footer */
+.conteneur8 {
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.footer-logo {
+    display: grid;
+    gap: 20px;
+    text-align: left;
+}
+h5 {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+.footer-company {
+    display: grid;
+}
+
+.footer ul {
+    display: grid;
+    list-style: none;
+    color: #5E6282;
+    gap: 0px;
+    font-family: sans-serif, "Montserrat";
+}
+.footer li {
+    font-weight: 400;
+}
+
+.footer-contact {
+    display: grid;
+}
+.footer-more {
+    display: grid;
+}
+.footer-socialmedia {
+    display: grid;
+}
+.social-media {
+    display: flex;
+    height: 8vh;
+}
+.footer-app {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-socialmedia p {
+    font-size: 16px;
+}
+#droits-footer {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 500;
+}
+/* FIN CONTENEUR footer */
+
+
+
